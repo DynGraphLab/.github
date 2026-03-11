@@ -49,39 +49,53 @@
 
 ## Quick Start
 
-### Install via Homebrew
+### DynMatch
 
 ```bash
-brew tap dyngraphlab/dyngraphlab
-brew install dynmatch dyndeltaorientation dynwmis
-```
-
-Then run:
-
-```bash
+brew tap dyngraphlab/dyngraphlab && brew install dynmatch
 dynmatch FILE --algorithm=randomwalk
-dyndeltaorientation FILE --algorithm=IMPROVEDOPT
-dynwmis FILE --algorithm=DynamicOneFast
 ```
 
-### Build from source
+Or build from source:
 
 ```bash
-# DynMatch
 git clone https://github.com/DynGraphLab/DynMatch && cd DynMatch
 ./compile_withcmake.sh
 ./deploy/dynmatch FILE --algorithm=randomwalk
+```
 
-# DynDeltaOrientation
+### DynDeltaOrientation
+
+```bash
+brew tap dyngraphlab/dyngraphlab && brew install dyndeltaorientation
+dyndeltaorientation FILE --algorithm=IMPROVEDOPT
+```
+
+Or build from source:
+
+```bash
 git clone https://github.com/DynGraphLab/DynDeltaOrientation && cd DynDeltaOrientation
 ./compile_withcmake.sh -DILP=Off
 ./deploy/delta-orientations FILE --algorithm=IMPROVEDOPT
+```
 
-# DynDeltaApprox (requires Bazel)
+### DynDeltaApprox
+
+```bash
 git clone https://github.com/DynGraphLab/DynDeltaApprox && cd DynDeltaApprox
 bazel build -c opt app --define logging=enabled
+```
 
-# DynWMIS
+### DynWMIS
+
+```bash
+brew tap dyngraphlab/dyngraphlab && brew install dynwmis
+dynwmis FILE --algorithm=DynamicOneFast
+```
+
+Or build from source:
+
+```bash
 git clone https://github.com/DynGraphLab/DynWMIS && cd DynWMIS
 ./compile_withcmake.sh
 ./deploy/dynwmis FILE --algorithm=DynamicOneFast
