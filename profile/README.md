@@ -52,9 +52,8 @@
 ### Install via Homebrew
 
 ```bash
-brew install DynGraphLab/dyngraphlab/dynmatch
-brew install DynGraphLab/dyngraphlab/dyndeltaorientation
-brew install DynGraphLab/dyngraphlab/dynwmis
+brew tap dyngraphlab/dyngraphlab
+brew install dynmatch dyndeltaorientation dynwmis
 ```
 
 Then run:
