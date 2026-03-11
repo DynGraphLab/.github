@@ -49,7 +49,23 @@
 
 ## Quick Start
 
-Most projects follow the same build pattern. Clone and compile:
+### Install via Homebrew
+
+```bash
+brew install DynGraphLab/dyngraphlab/dynmatch
+brew install DynGraphLab/dyngraphlab/dyndeltaorientation
+brew install DynGraphLab/dyngraphlab/dynwmis
+```
+
+Then run:
+
+```bash
+dynmatch FILE --algorithm=randomwalk
+dyndeltaorientation FILE --algorithm=IMPROVEDOPT
+dynwmis FILE --algorithm=DynamicOneFast
+```
+
+### Build from source
 
 ```bash
 # DynMatch
