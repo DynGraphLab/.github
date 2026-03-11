@@ -1,6 +1,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/DynGraphLab/.github/main/profile/dyngraphlab-logo.png" alt="DynGraphLab Logo"></p>
 
-> We develop and engineer algorithms for **fully dynamic graph problems** -- efficiently maintaining solutions as edges and vertices are inserted and deleted. Developed at the [Algorithm Engineering Group, Heidelberg University](https://algo2.iti.kit.edu/schulz.php).
+> We develop and engineer algorithms for **fully dynamic graph problems** -- efficiently maintaining solutions as edges and vertices are inserted and deleted. Developed at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de).
 
 ## What We Work On
 
