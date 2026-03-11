@@ -53,7 +53,7 @@
 
 ```bash
 brew tap dyngraphlab/dyngraphlab && brew install dynmatch
-dynmatch FILE --algorithm=randomwalk
+dynmatch FILE --algorithm=dynblossom --dynblossom_maintain_opt
 ```
 
 Or build from source:
@@ -61,7 +61,7 @@ Or build from source:
 ```bash
 git clone https://github.com/DynGraphLab/DynMatch && cd DynMatch
 ./compile_withcmake.sh
-./deploy/dynmatch FILE --algorithm=randomwalk
+./deploy/dynmatch FILE --algorithm=dynblossom --dynblossom_maintain_opt
 ```
 
 ### DynDeltaOrientation
