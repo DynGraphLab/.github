@@ -14,8 +14,6 @@
 
 **Dynamic Reachability.** Maintaining reachability information in a dynamically changing directed graph is a fundamental problem with applications in databases, program analysis, and network monitoring. Codes for the dynamic reachability problem are available at [dyreach.taa.univie.ac.at](https://dyreach.taa.univie.ac.at/).
 
-**Dynamic Graph Benchmarks.** To enable reproducible research, we provide a comprehensive testbed of fully dynamic graph instances (~10 GB) featuring real-world dynamic graphs (Wikipedia, Flickr, YouTube, Facebook, Amazon, and more) as well as synthetic instances derived from static graphs. All instances include edge insertion and deletion operations and are available in multiple variants (original, weighted, with undo operations).
-
 ## Projects
 
 ### Dynamic Matching
@@ -43,12 +41,6 @@
 |:-----------|:------------|
 | [DynReach](https://github.com/DynGraphLab/DynReach) | Implementations for the dynamic reachability problem ([external codes](https://dyreach.taa.univie.ac.at/)) |
 
-### Benchmarks
-
-| Repository | Description |
-|:-----------|:------------|
-| [dyngraphlab.github.io](https://github.com/DynGraphLab/dyngraphlab.github.io) | Dynamic graph benchmark instances and organization website with ~10 GB of real-world and synthetic fully dynamic graph sequences |
-
 ## Quick Start
 
 Most projects follow the same build pattern. Clone and compile:
@@ -74,12 +66,6 @@ git clone https://github.com/DynGraphLab/DynWMIS && cd DynWMIS
 ./deploy/dynwmis FILE --algorithm=DynamicOneFast
 ```
 
-Download benchmark instances:
-
-```bash
-wget -r -np https://aeghpc101.ifi.uni-heidelberg.de/~cschulz/dyngraphlabrepo/
-```
-
 ## Input Format
 
 All tools use a common dynamic graph sequence format:
@@ -96,16 +82,3 @@ where `n` is the number of vertices, `m` is the number of update operations, and
 
 All projects are released under the [MIT License](https://opensource.org/licenses/MIT).
 
-## References
-
-If you use our work, please cite the relevant papers:
-
-```bibtex
-@inproceedings{HanHenSch2021,
-  author    = {Kathrin Hanauer and Monika Henzinger and Christian Schulz},
-  title     = {Recent Advances in Fully Dynamic Graph Algorithms -- A Quick Reference Guide},
-  year      = {2021}
-}
-```
-
-See individual repository READMEs for project-specific citations.
